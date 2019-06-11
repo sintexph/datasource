@@ -1,0 +1,12 @@
+[2018-08-22 01:01:05] local.ERROR: file_put_contents(F:\Laravel Projects\Final Sourcecodes\datasource.sportscity.com.ph\storage\framework/sessions/doVCNKr6JlFzwLvXFiawvmU4THq5saMsgPZmeX9i): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_put_contents(F:\\Laravel Projects\\Final Sourcecodes\\datasource.sportscity.com.ph\\storage\\framework/sessions/doVCNKr6JlFzwLvXFiawvmU4THq5saMsgPZmeX9i): failed to open stream: No such file or directory at /var/www/datasource.sportscity.com.ph/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:122)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'file_put_conten...', '/var/www/dataso...', 122, Array)
+#1 /var/www/datasource.sportscity.com.ph/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(122): file_put_contents('F:\\\\Laravel Proj...', 'a:3:{s:6:\"_toke...', 2)
+#2 /var/www/datasource.sportscity.com.ph/vendor/laravel/framework/src/Illuminate/Session/FileSessionHandler.php(83): Illuminate\\Filesystem\\Filesystem->put('F:\\\\Laravel Proj...', 'a:3:{s:6:\"_toke...', true)
+#3 /var/www/datasource.sportscity.com.ph/vendor/laravel/framework/src/Illuminate/Session/Store.php(129): Illuminate\\Session\\FileSessionHandler->write('doVCNKr6JlFzwLv...', 'a:3:{s:6:\"_toke...')
+#4 /var/www/datasource.sportscity.com.ph/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(87): Illuminate\\Session\\Store->save()
+#5 /var/www/datasource.sportscity.com.ph/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(218): Illuminate\\Session\\Middleware\\StartSession->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#6 /var/www/datasource.sportscity.com.ph/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(189): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#7 /var/www/datasource.sportscity.com.ph/public/index.php(60): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
+#8 {main}
+"} 
